@@ -3,7 +3,7 @@
   "main": "index.js",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "/stage",
+  "homepage": "/stage",
   "dependencies": {
     "@pulumi/aws": "^1.20.0",
     "@pulumi/awsx": "^0.19.2",
