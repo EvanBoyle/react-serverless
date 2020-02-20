@@ -1,6 +1,6 @@
 {
   "name": "react_example",
-  "main": "index.js",
+  "main": "pulumi/index.js",
   "version": "0.1.0",
   "private": true,
   "homepage": "/stage",
@@ -18,7 +18,7 @@
     "react-scripts": "3.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently --kill-others-on-fail \"REACT_APP_ENDPOINT=http://localhost:3001 react-scripts start\" \"node local/localServer.js \"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
   }
 }

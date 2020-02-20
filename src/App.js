@@ -34,7 +34,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch(window.location.href+"/api/hello")
+    fetch((process.env.REACT_APP_ENDPOINT || window.location.href)+"/api/hello")
       .then(v => v.json())
       .then(v => {
         this.setState({ response: v.response })
