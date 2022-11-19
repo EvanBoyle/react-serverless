@@ -15,7 +15,7 @@
     "express": "^4.17.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "concurrently --kill-others-on-fail \"REACT_APP_ENDPOINT=http://localhost:3001 react-scripts start\" \"node local/localServer.js \"",
